@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGESTIVE QUOTIENT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DIGESTIVE QUOTIENT</h1>
+    <div class="circle-container">
+      <div class="circle">
+        YOUR SCORE OUT OF <br>
+        100 is
+        <span id="score-text">0</span>
+      </div>
+    </div>
+  </div>
+  
+
+            
+  <a href="/nextpage2.html"> <button type="submit">NEXT</button></a>
+  </div>
+
+  <script>
+    // Retrieve the score from localStorage
+    const score = localStorage.getItem('quizScore') || 0;
+
+    // Display the score in the circle
+    document.getElementById('score-text').textContent = score;
+  </script>
+</body>
+</html>
